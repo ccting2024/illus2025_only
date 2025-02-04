@@ -1,0 +1,631 @@
+/* Section-1 Styles */
+
+#banner .content-slider,
+#sbanner .content-slider,
+#tbanner .content-slider,
+#fbanner .content-slider,
+#fibanner .content-slider,
+#sibanner .content-slider,
+#sebanner .content-slider,
+#ebanner .content-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#banner .content-slider input,
+#sbanner .content-slider input,
+#tbanner .content-slider input,
+#fbanner .content-slider input,
+#fibanner .content-slider input,
+#sibanner .content-slider input,
+#sebanner .content-slider input,
+#ebanner .content-slider input {
+    display: none;
+}
+
+
+#banner .content-slider .slider .banner,
+#sbanner .content-slider .slider .banner,
+#tbanner .content-slider .slider .banner,
+#fbanner .content-slider .slider .banner,
+#fibanner .content-slider .slider .banner,
+#sibanner .content-slider .slider .banner,
+#sebanner .content-slider .slider .banner,
+#ebanner .content-slider .slider .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: all 0.5s ease;
+}
+#banner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button,
+#sbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button {
+    z-index: 15 !important;
+}
+
+#banner .content-slider .slider .banner .banner-inner-wrapper,
+#fbanner .content-slider .slider .banner .banner-inner-wrapper,
+#sibanner .content-slider .slider .banner .banner-inner-wrapper,
+#sbanner .content-slider .slider .banner .banner-inner-wrapper,
+#tbanner .content-slider .slider .banner .banner-inner-wrapper,
+#fibanner .content-slider .slider .banner .banner-inner-wrapper,
+#sebanner .content-slider .slider .banner .banner-inner-wrapper,
+#ebanner .content-slider .slider .banner .banner-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    width: 80vw;
+    background-image: linear-gradient(var(--gradient-banner-a));
+    box-sizing: border-box;
+}
+
+
+#banner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#sbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#tbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#fbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#fibanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#sibanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#sebanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a,
+#ebanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a{
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-align: center;
+    font-family: Meditative, sans-serif;
+    font-size: 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0.1875em solid #fff;
+}
+
+
+
+#banner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#sbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#tbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#fbanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#fibanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#sibanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#sebanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover,
+#ebanner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover{
+    color: var(--lesser-5);
+    border-color: var(--lesser-5);
+    transition: 0.3s;
+}
+
+
+#banner .content-slider nav,
+#sbanner .content-slider nav,
+#tbanner .content-slider nav,
+#fbanner .content-slider nav,
+#fibanner .content-slider nav,
+#sibanner .content-slider nav,
+#sebanner .content-slider nav,
+#ebanner .content-slider nav{
+    position: relative;
+    bottom: -1em;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+#banner .content-slider nav .controls,
+#sbanner .content-slider nav .controls,
+#tbanner .content-slider nav .controls,
+#fbanner .content-slider nav .controls,
+#fibanner .content-slider nav .controls,
+#sibanner .content-slider nav .controls,
+#sebanner .content-slider nav .controls,
+#ebanner .content-slider nav .controls{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Montserrat, sans-serif;
+    color: #afafaf;
+}
+
+#banner .content-slider nav .controls label,
+#sbanner .content-slider nav .controls label,
+#tbanner .content-slider nav .controls label,
+#fbanner .content-slider nav .controls label,
+#fibanner .content-slider nav .controls label,
+#sibanner .content-slider nav .controls label,
+#sebanner .content-slider nav .controls label,
+#ebanner .content-slider nav .controls label{
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    overflow: hidden;
+    margin: 0 .35em;
+    padding-top: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#banner .content-slider nav .controls label .progressbar,
+#sbanner .content-slider nav .controls label .progressbar,
+#tbanner .content-slider nav .controls label .progressbar,
+#fbanner .content-slider nav .controls label .progressbar,
+#fibanner .content-slider nav .controls label .progressbar,
+#sibanner .content-slider nav .controls label .progressbar,
+#sebanner .content-slider nav .controls label .progressbar,
+#ebanner .content-slider nav .controls label .progressbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 5px;
+    background: #654e4e;
+    z-index: 100;
+}
+@media (min-width:768px) {
+    #banner .content-slider nav .controls label .progressbar,
+#sbanner .content-slider nav .controls label .progressbar,
+#tbanner .content-slider nav .controls label .progressbar,
+#fbanner .content-slider nav .controls label .progressbar,
+#fibanner .content-slider nav .controls label .progressbar,
+#sibanner .content-slider nav .controls label .progressbar,
+#sebanner .content-slider nav .controls label .progressbar,
+#ebanner .content-slider nav .controls label .progressbar{
+
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    background: #654e4e;
+    z-index: 100;
+}
+#banner .content-slider nav .controls label,
+#sbanner .content-slider nav .controls label,
+#tbanner .content-slider nav .controls label,
+#fbanner .content-slider nav .controls label,
+#fibanner .content-slider nav .controls label,
+#sibanner .content-slider nav .controls label,
+#sebanner .content-slider nav .controls label,
+#ebanner .content-slider nav .controls label{
+    width: 6%;
+    padding-top: 1.5em;
+}
+}
+
+#banner .content-slider nav .controls label .progressbar .progressbar-fill,
+#sbanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#tbanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#fbanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#fibanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#sibanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#sebanner .content-slider nav .controls label .progressbar .progressbar-fill,
+#ebanner .content-slider nav .controls label .progressbar .progressbar-fill{
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    margin-left: -100%;
+
+}
+
+
+#banner .content-slider nav .controls label:hover,
+#sbanner .content-slider nav .controls label:hover,
+#tbanner .content-slider nav .controls label:hover,
+#fbanner .content-slider nav .controls label:hover,
+#fibanner .content-slider nav .controls label:hover,
+#sibanner .content-slider nav .controls label:hover,
+#sebanner .content-slider nav .controls label:hover,
+#ebanner .content-slider nav .controls label:hover{
+    color:#515151;
+}
+
+/*(1) */
+#banner .content-slider .slider #top-banner-1 {
+    background: url('../picture/P1_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-2 {
+    background: url('../picture/P1_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-3 {
+    background: url('../picture/P1_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-4 {
+    background: url('../picture/P1_4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-5 {
+    background: url('../picture/P1_5.jpg') no-repeat center center;
+    background-size: cover;
+}
+#banner .content-slider .slider #top-banner-6 {
+    background: url('../picture/P1_6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-7 {
+    background: url('../picture/P1_7.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-8 {
+    background: url('../picture/P1_8.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-9 {
+    background: url('../picture/P1_9.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner .content-slider .slider #top-banner-10 {
+    background: url('../picture/P1_10.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*(2)*/
+#sbanner .content-slider .slider #top-sbanner-1 {
+    background: url('../picture/P2_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sbanner .content-slider .slider #top-sbanner-2 {
+    background: url('../picture/P2_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sbanner .content-slider .slider #top-sbanner-3 {
+    background: url('../picture/P2_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*(3) */
+#tbanner .content-slider .slider #top-tbanner-1 {
+    background: url('../picture/P3_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-2 {
+    background: url('../picture/P3_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-3 {
+    background: url('../picture/P3_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-4 {
+    background: url('../picture/P3_4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-5 {
+    background: url('../picture/P3_5.jpg') no-repeat center center;
+    background-size: cover;
+}
+#tbanner .content-slider .slider #top-tbanner-6 {
+    background: url('../picture/P3_6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-7 {
+    background: url('../picture/P3_7.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tbanner .content-slider .slider #top-tbanner-8 {
+    background: url('../picture/P3_8.jpg') no-repeat center center;
+    background-size: cover;
+}
+/*(4)*/
+#fbanner .content-slider .slider #top-fbanner-1 {
+    background: url('../picture/P4_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-2 {
+    background: url('../picture/P4_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-3 {
+    background: url('../picture/P4_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-4 {
+    background: url('../picture/P4_4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-5 {
+    background: url('../picture/P4_5.jpg') no-repeat center center;
+    background-size: cover;
+}
+#fbanner .content-slider .slider #top-fbanner-6 {
+    background: url('../picture/P4_6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-7 {
+    background: url('../picture/P4_7.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fbanner .content-slider .slider #top-fbanner-8 {
+    background: url('../picture/P4_8.jpg') no-repeat center center;
+    background-size: cover;
+}
+/*(5)*/
+#fibanner .content-slider .slider #top-fibanner-1 {
+    background: url('../picture/P5_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fibanner .content-slider .slider #top-fibanner-2 {
+    background: url('../picture/P5_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+/*(6)*/
+#sibanner .content-slider .slider #top-sibanner-1 {
+    background: url('../picture/P6_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-2 {
+    background: url('../picture/P6_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-3 {
+    background: url('../picture/P6_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-4 {
+    background: url('../picture/P6_4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-5 {
+    background: url('../picture/P6_5.jpg') no-repeat center center;
+    background-size: cover;
+}
+#sibanner .content-slider .slider #top-sibanner-6 {
+    background: url('../picture/P6_6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-7 {
+    background: url('../picture/P6_7.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sibanner .content-slider .slider #top-sibanner-8 {
+    background: url('../picture/P6_8.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*(7)*/
+#sebanner .content-slider .slider #top-sebanner-1 {
+    background: url('../picture/P7_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sebanner .content-slider .slider #top-sebanner-2 {
+    background: url('../picture/P7_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*(8)*/
+#ebanner .content-slider .slider #top-ebanner-1 {
+    background: url('../picture/P8_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#ebanner .content-slider .slider #top-ebanner-2 {
+    background: url('../picture/P8_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#ebanner .content-slider .slider #top-ebanner-3 {
+    background: url('../picture/P8_3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#ebanner .content-slider .slider #top-ebanner-4 {
+    background: url('../picture/P8_4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+#banner .content-slider #banner1:checked~.slider #top-banner-1,
+#banner .content-slider #banner2:checked~.slider #top-banner-2,
+#banner .content-slider #banner3:checked~.slider #top-banner-3,
+#banner .content-slider #banner4:checked~.slider #top-banner-4,
+#banner .content-slider #banner5:checked~.slider #top-banner-5,
+#banner .content-slider #banner6:checked~.slider #top-banner-6,
+#banner .content-slider #banner7:checked~.slider #top-banner-7,
+#banner .content-slider #banner8:checked~.slider #top-banner-8,
+#banner .content-slider #banner9:checked~.slider #top-banner-9,
+#banner .content-slider #banner10:checked~.slider #top-banner-10,
+#sbanner .content-slider #sbanner1:checked~.slider #top-sbanner-1,
+#sbanner .content-slider #sbanner2:checked~.slider #top-sbanner-2,
+#sbanner .content-slider #sbanner3:checked~.slider #top-sbanner-3,
+#tbanner .content-slider #tbanner1:checked~.slider #top-tbanner-1,
+#tbanner .content-slider #tbanner2:checked~.slider #top-tbanner-2,
+#tbanner .content-slider #tbanner3:checked~.slider #top-tbanner-3,
+#tbanner .content-slider #tbanner4:checked~.slider #top-tbanner-4,
+#tbanner .content-slider #tbanner5:checked~.slider #top-tbanner-5,
+#tbanner .content-slider #tbanner6:checked~.slider #top-tbanner-6,
+#tbanner .content-slider #tbanner7:checked~.slider #top-tbanner-7,
+#tbanner .content-slider #tbanner8:checked~.slider #top-tbanner-8,
+#fbanner .content-slider #fbanner1:checked~.slider #top-fbanner-1,
+#fbanner .content-slider #fbanner2:checked~.slider #top-fbanner-2,
+#fbanner .content-slider #fbanner3:checked~.slider #top-fbanner-3,
+#fbanner .content-slider #fbanner4:checked~.slider #top-fbanner-4,
+#fbanner .content-slider #fbanner5:checked~.slider #top-fbanner-5,
+#fbanner .content-slider #fbanner6:checked~.slider #top-fbanner-6,
+#fbanner .content-slider #fbanner7:checked~.slider #top-fbanner-7,
+#fbanner .content-slider #fbanner8:checked~.slider #top-fbanner-8,
+#fibanner .content-slider #fibanner1:checked~.slider #top-fibanner-1,
+#fibanner .content-slider #fibanner2:checked~.slider #top-fibanner-2,
+#sibanner .content-slider #sibanner1:checked~.slider #top-sibanner-1,
+#sibanner .content-slider #sibanner2:checked~.slider #top-sibanner-2,
+#sibanner .content-slider #sibanner3:checked~.slider #top-sibanner-3,
+#sibanner .content-slider #sibanner4:checked~.slider #top-sibanner-4,
+#sibanner .content-slider #sibanner5:checked~.slider #top-sibanner-5,
+#sibanner .content-slider #sibanner6:checked~.slider #top-sibanner-6,
+#sibanner .content-slider #sibanner7:checked~.slider #top-sibanner-7,
+#sibanner .content-slider #sibanner8:checked~.slider #top-sibanner-8,
+#sebanner .content-slider #sebanner1:checked~.slider #top-sebanner-1,
+#sebanner .content-slider #sebanner2:checked~.slider #top-sebanner-2,
+#ebanner .content-slider #ebanner1:checked~.slider #top-ebanner-1,
+#ebanner .content-slider #ebanner2:checked~.slider #top-ebanner-2,
+#ebanner .content-slider #ebanner3:checked~.slider #top-ebanner-3,
+#ebanner .content-slider #ebanner4:checked~.slider #top-ebanner-4    {
+    opacity: 1;
+    z-index: 1;
+}
+
+#banner .content-slider #banner1:checked~nav label:nth-of-type(1),
+#banner .content-slider #banner2:checked~nav label:nth-of-type(2),
+#banner .content-slider #banner3:checked~nav label:nth-of-type(3),
+#banner .content-slider #banner4:checked~nav label:nth-of-type(4),
+#banner .content-slider #banner5:checked~nav label:nth-of-type(5),
+#banner .content-slider #banner6:checked~nav label:nth-of-type(6),
+#banner .content-slider #banner7:checked~nav label:nth-of-type(7),
+#banner .content-slider #banner8:checked~nav label:nth-of-type(8),
+#banner .content-slider #banner9:checked~nav label:nth-of-type(9),
+#banner .content-slider #banner10:checked~nav label:nth-of-type(10),
+#sbanner .content-slider #sbanner1:checked~nav label:nth-of-type(1),
+#sbanner .content-slider #sbanner2:checked~nav label:nth-of-type(2),
+#sbanner .content-slider #sbanner3:checked~nav label:nth-of-type(3),
+#tbanner .content-slider #tbanner1:checked~nav label:nth-of-type(1),
+#tbanner .content-slider #tbanner2:checked~nav label:nth-of-type(2),
+#tbanner .content-slider #tbanner3:checked~nav label:nth-of-type(3),
+#tbanner .content-slider #tbanner4:checked~nav label:nth-of-type(4),
+#tbanner .content-slider #tbanner5:checked~nav label:nth-of-type(5),
+#tbanner .content-slider #tbanner6:checked~nav label:nth-of-type(6),
+#tbanner .content-slider #tbanner7:checked~nav label:nth-of-type(7),
+#tbanner .content-slider #tbanner8:checked~nav label:nth-of-type(8),
+#fbanner .content-slider #fbanner1:checked~nav label:nth-of-type(1),
+#fbanner .content-slider #fbanner2:checked~nav label:nth-of-type(2),
+#fbanner .content-slider #fbanner3:checked~nav label:nth-of-type(3),
+#fbanner .content-slider #fbanner4:checked~nav label:nth-of-type(4),
+#fbanner .content-slider #fbanner5:checked~nav label:nth-of-type(5),
+#fbanner .content-slider #fbanner6:checked~nav label:nth-of-type(6),
+#fbanner .content-slider #fbanner7:checked~nav label:nth-of-type(7),
+#fbanner .content-slider #fbanner8:checked~nav label:nth-of-type(8),
+#fibanner .content-slider #fibanner1:checked~nav label:nth-of-type(1),
+#fibanner .content-slider #fibanner2:checked~nav label:nth-of-type(2),
+#sibanner .content-slider #sibanner1:checked~nav label:nth-of-type(1),
+#sibanner .content-slider #sibanner2:checked~nav label:nth-of-type(2),
+#sibanner .content-slider #sibanner3:checked~nav label:nth-of-type(3),
+#sibanner .content-slider #sibanner4:checked~nav label:nth-of-type(4),
+#sibanner .content-slider #sibanner5:checked~nav label:nth-of-type(5),
+#sibanner .content-slider #sibanner6:checked~nav label:nth-of-type(6),
+#sibanner .content-slider #sibanner7:checked~nav label:nth-of-type(7),
+#sibanner .content-slider #sibanner8:checked~nav label:nth-of-type(8),
+#sebanner .content-slider #sebanner1:checked~nav label:nth-of-type(1),
+#sebanner .content-slider #sebanner2:checked~nav label:nth-of-type(2),
+#ebanner .content-slider #ebanner1:checked~nav label:nth-of-type(1),
+#ebanner .content-slider #ebanner2:checked~nav label:nth-of-type(2),
+#ebanner .content-slider #ebanner3:checked~nav label:nth-of-type(3),
+#ebanner .content-slider #ebanner4:checked~nav label:nth-of-type(4)   {
+    cursor: default;
+    color: #212020;
+    transition: all 0.5s;
+}
+#banner .content-slider #banner1:checked~nav label:nth-of-type(1) .progressbar,
+#banner .content-slider #banner2:checked~nav label:nth-of-type(2) .progressbar,
+#banner .content-slider #banner3:checked~nav label:nth-of-type(3) .progressbar,
+#banner .content-slider #banner4:checked~nav label:nth-of-type(4) .progressbar,
+#banner .content-slider #banner5:checked~nav label:nth-of-type(5) .progressbar {
+    background: #fff;
+}
+#banner .content-slider #banner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#banner .content-slider #banner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#banner .content-slider #banner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#banner .content-slider #banner4:checked~nav label:nth-of-type(4) .progressbar-fill,
+#banner .content-slider #banner5:checked~nav label:nth-of-type(5) .progressbar-fill,
+#banner .content-slider #banner6:checked~nav label:nth-of-type(6) .progressbar-fill,
+#banner .content-slider #banner7:checked~nav label:nth-of-type(7) .progressbar-fill,
+#banner .content-slider #banner8:checked~nav label:nth-of-type(8) .progressbar-fill,
+#banner .content-slider #banner9:checked~nav label:nth-of-type(9) .progressbar-fill,
+#banner .content-slider #banner10:checked~nav label:nth-of-type(10) .progressbar-fill,
+#sbanner .content-slider #sbanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#sbanner .content-slider #sbanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#sbanner .content-slider #sbanner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#tbanner .content-slider #tbanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#tbanner .content-slider #tbanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#tbanner .content-slider #tbanner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#tbanner .content-slider #tbanner4:checked~nav label:nth-of-type(4) .progressbar-fill,
+#tbanner .content-slider #tbanner5:checked~nav label:nth-of-type(5) .progressbar-fill,
+#tbanner .content-slider #tbanner6:checked~nav label:nth-of-type(6) .progressbar-fill,
+#tbanner .content-slider #tbanner7:checked~nav label:nth-of-type(7) .progressbar-fill,
+#tbanner .content-slider #tbanner8:checked~nav label:nth-of-type(8) .progressbar-fill,
+#fbanner .content-slider #fbanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#fbanner .content-slider #fbanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#fbanner .content-slider #fbanner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#fbanner .content-slider #fbanner4:checked~nav label:nth-of-type(4) .progressbar-fill,
+#fbanner .content-slider #fbanner5:checked~nav label:nth-of-type(5) .progressbar-fill,
+#fbanner .content-slider #fbanner6:checked~nav label:nth-of-type(6) .progressbar-fill,
+#fbanner .content-slider #fbanner7:checked~nav label:nth-of-type(7) .progressbar-fill,
+#fbanner .content-slider #fbanner8:checked~nav label:nth-of-type(8) .progressbar-fill,
+#fibanner .content-slider #fibanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#fibanner .content-slider #fibanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#sibanner .content-slider #sibanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#sibanner .content-slider #sibanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#sibanner .content-slider #sibanner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#sibanner .content-slider #sibanner4:checked~nav label:nth-of-type(4) .progressbar-fill,
+#sibanner .content-slider #sibanner5:checked~nav label:nth-of-type(5) .progressbar-fill,
+#sibanner .content-slider #sibanner6:checked~nav label:nth-of-type(6) .progressbar-fill,
+#sibanner .content-slider #sibanner7:checked~nav label:nth-of-type(7) .progressbar-fill,
+#sibanner .content-slider #sibanner8:checked~nav label:nth-of-type(8) .progressbar-fill,
+#sebanner .content-slider #sebanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#sebanner .content-slider #sebanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#ebanner .content-slider #ebanner1:checked~nav label:nth-of-type(1) .progressbar-fill,
+#ebanner .content-slider #ebanner2:checked~nav label:nth-of-type(2) .progressbar-fill,
+#ebanner .content-slider #ebanner3:checked~nav label:nth-of-type(3) .progressbar-fill,
+#ebanner .content-slider #ebanner4:checked~nav label:nth-of-type(4) .progressbar-fill {
+    animation: progressBarFill 5s linear;
+}
+    
+/* Animations */
+@keyframes progressBarFill {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+
+/* 小型設備(手機) */
+@media (max-width:640px) {
+    /* #banner .content-slider .slider .banner .banner-inner-wrapper h2 {
+        font-size: 2rem;
+    } */
+
+}

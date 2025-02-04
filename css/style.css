@@ -1,0 +1,408 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+/*UTF-8 一定要在行數1 */
+/*google font 一定要在行數2 */
+
+/* 重置所有標籤的樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*不累加內距padding與邊匡border*/
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        "Noto Serif TC", serif;
+    /* 有減號、單一字（沒空白）可以不用加引號、加了也沒關係*/
+    font-size: 100%;
+    line-height: 1.5;
+    background-image: url(../picture/bg.jpg);
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 10vw;
+}
+
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: noto Serif TC, Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: .115em;
+}
+
+section {
+    padding-top: 20px;
+}
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+/* 選單區 */
+header {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bar {
+    display: block;
+    letter-spacing: .08em;
+    font-size: 16px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.bar:active {
+    opacity: 0.3;
+    transition: .35s;
+}
+@media (min-width:768px) {
+    .navbar {
+        display: flex;
+    }
+    .menu {
+       display: flex;
+    }
+    /* 為什麼不行？？ */
+    .menu li a {
+padding: 10px;
+width: 5vw;
+    }
+
+
+}
+.menu li {
+    display: flex;
+    justify-content: center;
+}
+
+.menu li a {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 2px 0;
+    width: 12vw;
+}
+
+.menu li a div {
+    font-size: 20.5px;
+    font-weight: 500;
+}
+
+/* 預設隱藏選單 */
+.navigation {
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.navigation.show {
+    /* 確保這個名稱跟 JS 裡的一樣 */
+    display: block;
+    /* 點擊時顯示 */
+}
+
+/* 當 .show-menu 類別加到 .navigation 時，選單會顯示 */
+.navigation .show-menu {
+    opacity: 1;
+    display: block;
+}
+
+.menumom {
+    display: inline-block;
+    /* 修改button在瀏覽器中預設的樣式 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+/* 標題區 */
+#hire {
+    margin: 70px 0;
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .19em;
+    height: 53px;
+}
+
+.title h6 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+}
+
+.title h6 div {
+    font-size: 18px;
+    height: 20px;
+    padding-left: .2em;
+}
+
+.title h6 div:first-child {
+    font-size: 18px;
+    height: 20px;
+    padding-top: 2.5px;
+}
+
+#hire h2 {
+    margin-bottom: 150px;
+}
+
+#hire p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+/* 年輪區 */
+.growthrings {
+    width: 258vw;
+    height: 75vh;
+    position: absolute;
+    background: url('../picture/growthrings.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -680px;
+    top: 800px;
+    z-index: -1;
+}
+@media (min-width:768px){
+.growthrings {
+    opacity: .5;}
+}
+#gt2 {
+    width: 215vw;
+    height: 65vh;
+    left: -500px;
+    top: 1920px;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+#gt3 {
+    width: 105vw;
+    height: 30vh;
+    left: 45px;
+    top: 8710px;
+    transform: rotate(90deg) scaleX(-1);
+}
+/* 前言區 */
+#shysay {
+    margin: 600px 0 700px 120px;
+}
+
+#shysay h2 {
+    letter-spacing: .04em;
+    display: inline-block;
+}
+
+#shysay2,
+#shysay h3 {
+    display: inline-block;
+    margin-bottom: 46px;
+}
+
+#shysay p {
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .04em;
+    margin-bottom: 10px;
+}
+/* 作品區 */
+
+#pictures .ps {
+  color: #654e4e;
+  font-size: 20px;
+  letter-spacing: .04em;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+.textbox {
+display:inline-flex;
+margin: 42px 0 22px 0;
+}
+.textbox h3 {
+    letter-spacing: .3em;
+    font-size: 20px;
+    font-weight: 600;
+}
+.text {
+    margin-left: 15px;
+}
+.textbox h4 {
+    letter-spacing: .2em;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom:8px ;
+}
+.textbox h5,.textbox h6 {
+    display: inline-block;
+    letter-spacing: .11em;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.textbox h6 {
+    display: block;
+}
+
+.picturebox {
+    width: 80vw;
+}
+.content-slider {
+    width: 80vw;
+    height: 900px;
+}
+.banner {
+    width:80vw ;
+    height: 100px;
+}
+.picture {
+    width:80vw ;
+    height: auto;
+    margin-bottom: 40px;
+}
+.say {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: .12em;
+    opacity: .7;
+}
+
+/* 橫式 */
+#banner .content-slider .slider ,
+#fbanner .content-slider .slider,
+#sibanner .content-slider .slider{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+
+#sbanner .content-slider .slider ,
+#tbanner .content-slider .slider ,
+#fibanner .content-slider .slider,
+#sebanner .content-slider .slider,
+#ebanner .content-slider .slider {
+    height: 460px;
+    margin-bottom: 20px;
+}
+@media (min-width:768px) {
+    #banner .content-slider .slider ,
+#fbanner .content-slider .slider,
+#sibanner .content-slider .slider{
+    height: 500px;
+    margin-bottom: 20px;
+}
+#sbanner .content-slider .slider ,
+#tbanner .content-slider .slider ,
+#fibanner .content-slider .slider,
+#sebanner .content-slider .slider,
+#ebanner .content-slider .slider {
+    height: 600px;
+    margin-bottom: 20px;
+}
+}
+
+/* 關於畫者 */
+#about {
+margin-bottom: 50px;
+margin-top: 400px;
+}
+#about h2 {
+    margin-bottom: 40px;
+}
+#about .thing {
+    
+    background-size: cover;
+}
+
+#about .thingbox {
+    display: inline;
+    
+}
+#about .thingbox div{
+    width: 40vw;
+    margin-bottom: 30px;
+}
+#about h3 {
+    font-size: 1.4em;
+    letter-spacing: .13em;
+    font-weight: 300;
+}
+#about h5{
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #654e4e;
+    margin: 15px 0 5px 0;
+    
+}
+#about a {
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #141414;
+    margin: 5px 0 5px 0;
+    
+}
+.slider {
+    transition: transform 0.5s ease;
+}
+footer {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    opacity:.5;
+}

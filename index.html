@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光影之語聯展＿張婷插畫</title>
+    <link rel="icon" href="favicon.ico">
+    <!--以防萬一沒有自動抓，可加上上方那行link連結-->
+    <!-- 換圖輪播css -->
+    <link rel="stylesheet" href="./css/carousel.css">
+    <!-- 自己寫的css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--css用link的方式加入，記得加上 ./ -->
+</head>
+
+<body>
+    <header id="topbar">
+        <div class="navbar">
+            <button class="menumom">
+                <h2 class="bar">
+                    MENU
+                </h2>
+            </button>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#hire">
+                            <div>首</div>
+                            <div>頁</div>
+                        </a></li>
+                    <li><a href="#shysay">
+                            <div>前</div>
+                            <div>言</div>
+                        </a></li>
+                    <li><a href="#pictures">
+                            <div>作</div>
+                            <div>品</div>
+                        </a></li>
+                    <li><a href="#about">
+                            <div>信</div>
+                            <div>箱</div>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hire">
+            <div class="title">
+                <h1>
+                    光影之語
+                </h1>
+                <h6>
+                    <div>展</div>
+                    <div>聯</div>
+                </h6>
+            </div>
+
+            <h2>
+                -張婷插畫創作
+            </h2>
+            <p>
+                本次聯合插畫展中，<br>收錄張婷於2023~2024年的<br>
+                油性色鉛筆創作共8張，<br>主要為精細的寵物人像插畫，<br>具象且精緻但柔和風格，<br>
+                希望將和煦溫柔的感覺<br>帶給看展的人
+            </p>
+        </section>
+        <div class="growthrings" id="gt1">
+        </div>
+        <section id="shysay">
+            <h2>在開始前</h2>
+            <h2 class="shysay2">想先說</h2>
+            <h3>...</h3>
+
+            <p>
+                各位安安<br>
+                可以看到這個限定版網站的人都是張婷的好友(人數很少的意思)<br>
+                起初會有製作網站的想法是想給一些不方便相見、但好奇作畫過程和心得的朋友做的
+    
+            </p>
+            <p>加上開展後發現展區實際效果有點不如預期，作品懸掛的位置很高只能遠遠觀望，但個人作品比較精雕細琢，適合近距離貼近看小細節<br>
+                沒辦法好好表現出特色實在有點可惜QQ
+                後來才又延伸做了第二個公開版（任何人掃碼就能看到的）<br>
+                或是有人好奇一直不務正業的人到底學了什麼，總之這個網站從視覺到程式撰寫都是我完成的(其實有ＧＰＴ幫忙)<br>
+                所以功能有些落漆請多包涵。總之公開版和限定版網站設計都一樣，差別只在有沒有我的心得哈
+                (如果不想看字也是可以直接跳出啦...)
+            </p>
+            <p>最後
+                非常感謝每個來看展的朋友，大家都很忙錄還抽空前來～<br>
+            真心感謝提供我照片的朋朋，收到了很多動物小可愛們可惜時間不夠來不及完成，不然真的很想都把他們畫下來啊～尤其特別感謝冠葶攝影師ＱＱ膩的照片真的超讚超美的<br>
+            </p>
+        </section>
+        <div class="growthrings" id="gt2">
+        </div>
+        <section id="pictures">
+            <h2>
+                作品集
+            </h2>
+                <h6 class="ps">
+                    ＊請點擊深色小方框查看圖片（本來應該是輪播但我能力不足...）
+                </h6>
+            
+            
+            <!-- 第一區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(1)</h3>
+                    <div class="text">
+                        <h4>草地與狗</h4>
+                        <h5>32.5＊50cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.11月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="banner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="banner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner4" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner5" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner6" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner7" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner8" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner9" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner10" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-banner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-banner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-banner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第四張 -->
+                                <div id="top-banner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第五張 -->
+                                <div id="top-banner-5" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第六張 -->
+                                <div id="top-banner-6" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第七張 -->
+                                <div id="top-banner-7" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第八張 -->
+                                <div id="top-banner-8" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第九張 -->
+                                <div id="top-banner-9" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第十張 -->
+                                <div id="top-banner-10" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="banner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner4">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner5">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner6">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner7">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner8">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner9">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="banner10">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    這是我為了展覽畫的第一張畫，起初只決定要畫貓狗，卻還決定好作品要表達的內容，這張是還在思考階段的產物。<br>
+                    將影像如實畫下不是難事，想像出不存在的光影和背景反而更需要思考著墨；因為希望能更清晰聚焦主角，所以將草堆畫得朦朧，第一次用色鉛筆嘗試但成果意外讓我喜歡，尤其是畫面左下方藍色和棕色調和的草叢暗處。草叢的花朵是雛菊(daisy)，諺語是day’s eye. 希望跟畫作都傳遞出溫暖明亮的感覺給看畫的你。<br>
+                    <br>
+                    因為是第一張畫，所以沒有掌握好畫紙的尺寸。實際畫作長度跟框一樣長，不過為了跟其他張畫作統一所以將部分的畫遮起來了。
+                    
+                </div>
+            </div>
+            <!-- 第二區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(2)</h3>
+                    <div class="text">
+                        <h4>眺望的橘貓</h4>
+                        <h5>32.5＊50cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.11月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="sbanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="sbanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="sbanner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="sbanner3" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-sbanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-sbanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-sbanner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="sbanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sbanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sbanner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    這張有參考網路素材照片，希望這張畫傳遞出了貓的霸氣和故事感。<br>
+                    我想強調主角威風凌凌、有氣勢的感覺，所以這幅是唯一一張挑戰只用單一色系作畫的圖；
+                    我多數的畫都用很多顏色去交疊，至少都有35種以上，除了這張大概用不到10種(連紙也是黃的)，
+                    結果實際開始後好難好痛苦嘗試好久，成果也不滿意到讓我想放棄。但交稿前幾天回頭再來看這張畫，
+                    多補了幾個小時，後來又覺得其實效果還不錯(創作就是個反覆矛盾的過程啊)。
+                </div>
+            </div>
+            <!-- 第三區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(3)</h3>
+                    <div class="text">
+                        <h4>暖心相聚</h4>
+                        <h5>32.5＊50cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.11月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="tbanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="tbanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="tbanner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner4" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner5" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner6" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner7" class="sec-1-input" name="banner">
+                            <input type="radio" id="tbanner8" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-tbanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-tbanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-tbanner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第四張 -->
+                                <div id="top-tbanner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第五張 -->
+                                <div id="top-tbanner-5" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第六張 -->
+                                <div id="top-tbanner-6" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第七張 -->
+                                <div id="top-tbanner-7" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第八張 -->
+                                <div id="top-tbanner-8" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="tbanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner4">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner5">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner6">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner7">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="tbanner8">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    我覺得人不論在外面遇到怎麼樣的挫折和痛苦，回家後看到貓貓狗狗冷掉的心又能回暖充電，寵物大概是如此療癒人心的存在。這張畫是少數有人像的，我很喜歡畫人，所以這張畫得很開心。<br>
+                    我用了很多顏色去疊出柔軟的貓毛，軟萌的肚子毛是一根一根畫出來的哦<br>
+                    這張畫的參考照出自於冠葶，當時看到這張我內心超驚豔！捕捉的瞬間好讚好完美，這張畫如果能有多好看都是多虧於她給我的厲害素材，真心感謝冠葶和李姍
+                </div>
+            </div>
+            <!-- 第四區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(4)</h3>
+                    <div class="text">
+                        <h4>喵</h4>
+                        <h5>32.5＊43.5cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.12月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="fbanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="fbanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="fbanner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner4" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner5" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner6" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner7" class="sec-1-input" name="banner">
+                            <input type="radio" id="fbanner8" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-fbanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-fbanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-fbanner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第四張 -->
+                                <div id="top-fbanner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第五張 -->
+                                <div id="top-fbanner-5" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第六張 -->
+                                <div id="top-fbanner-6" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第七張 -->
+                                <div id="top-fbanner-7" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第八張 -->
+                                <div id="top-fbanner-8" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="fbanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner4">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner5">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner6">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner7">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fbanner8">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    這張是我完成後特別喜歡的一張，其他圖都感覺很寧靜但他卻特別有動感和張力，老實說畫完後他左右大小眼的樣子，很像瞇著眼在說「跨啥小」哈哈哈<br>
+                    一筆一筆去刻毛孔和毛髮花好多時間，但完成後很有成就感。因為是小物放大倍來作畫，所以畫的又更精緻了。這張也是出自冠葶之手，和非常上像的miumiu。                   
+                </div>
+            </div>
+            <!-- 第五區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(5)</h3>
+                    <div class="text">
+                        <h4>三味</h4>
+                        <h5>30＊40cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.12月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="fibanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="fibanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="fibanner2" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-fibanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-fibanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="fibanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="fibanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    三個排在一起很像三種不同口味的圓滾滾的麻糬，如貓名三味。<br>
+                    三味是姵穎家的貓，捲曲手手在床上偷拋媚眼妖嬌模樣有夠可愛，想保留動態感就用像是影格一樣三連拍的形式畫下來，也想致敬安迪沃荷的風格。<br>  
+                    畫紙是我帶著飼主去美術社盲挑的，會說盲挑因為完全沒跟他說要幹嘛直接叫他選三張，結果選了帶有紋路的雲彩紙                    
+                </div>
+            </div>
+            <!-- 第六區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(6)</h3>
+                    <div class="text">
+                        <h4>窩中小憩</h4>
+                        <h5>32.5＊43.5cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2024.12月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="sibanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="sibanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="sibanner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner4" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner5" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner6" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner7" class="sec-1-input" name="banner">
+                            <input type="radio" id="sibanner8" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-sibanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-sibanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-sibanner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第四張 -->
+                                <div id="top-sibanner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第五張 -->
+                                <div id="top-sibanner-5" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第六張 -->
+                                <div id="top-sibanner-6" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第七張 -->
+                                <div id="top-sibanner-7" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第八張 -->
+                                <div id="top-sibanner-8" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="sibanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner4">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner5">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner6">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner7">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sibanner8">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    丁丁是可安家的貓貓，可安給我看的每隻貓狗都睡得舒服香甜，就算一旁擺滿書堆、雜物也能睡的東倒西外不醒人事，看著這些睡臉不禁覺得他們也太幸福了吧！<br>
+                    這張選擇用大量繽紛的顏色來繪製，本來一隻灰斑貓被畫得五彩斑斕（不知道親媽還認不認得），貓與被子都被午後的夕陽灑落，閃著落日餘光。希望這樣的寧靜與和平，能傳遞給看畫的你。                    
+                </div>
+            </div>
+            <!-- 第七區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(7)</h3>
+                    <div class="text">
+                        <h4>自畫像</h4>
+                        <h5>32.5＊50cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2023.04月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="sebanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="sebanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="sebanner2" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-sebanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-sebanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="sebanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="sebanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    這算是一張自我滿足的自畫像，因為我把最喜歡的菇和自己結合在一起。我很喜歡菇優雅、不規則卻充滿律動的生命感，只能存在人煙稀少的山陵野溪、過度開發的都市無法顯現的神秘和隱世精神也是，若偶而在路上草堆撇見菇，都會特別憐惜、駐足欣賞。<br>
+                    這是兩年前學校的作品，因為進度太慢所以從櫃子裡重新翻出來。雖然是第一張油性色鉛筆的創作，但裡面有不少學榮老師的加筆，例如：深刻強調的五官線、多彩的髮絲、跟立可白白點…。                    
+                </div>
+            </div>
+            <!-- 第八區 -->
+            <div class="picture">
+                <div class="textbox">
+                    <h3>(8)</h3>
+                    <div class="text">
+                        <h4>盡心取悅</h4>
+                        <h5>32.5＊50cm</h5>
+                        <h5>油性色鉛筆</h5>
+                        <h6>2023.05月</h6>
+                    </div>
+                </div>
+                <div class="picturebox">
+
+                    <!-- 換圖輪播區 -->
+                    <section id="ebanner">
+                        <div class="content-slider">
+                            <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                            <input type="radio" id="ebanner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="ebanner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="ebanner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="ebanner4" class="sec-1-input" name="banner">
+                            <!-- 輪播圖區 -->
+                            <div class="slider">
+                                <!-- 第一張 -->
+                                <div id="top-ebanner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第二張 -->
+                                <div id="top-ebanner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第三張 -->
+                                <div id="top-ebanner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                                <!-- 第四張 -->
+                                <div id="top-ebanner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <!-- 輪播張數提示器 -->
+                            <nav>
+                                <div class="controls">
+
+                                    <label for="ebanner1">
+                                        <!-- 進度條 -->
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="ebanner2">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="ebanner3">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                    <label for="ebanner4">
+                                        <span class="progressbar"><span class="progressbar-fill"></span>
+                                        </span></label>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="say">
+                    這也是一張因為趕不上所以端上過往的作品。<br>
+                    我覺得所謂的「甜點」是一個極力取悅人的存在，努力雕磨外觀吸引眼球、內涵又要香甜折服味蕾。集一身華美但保鮮期卻短的稍縱即逝。我總是會被甜點吸引，也喜歡當個做甜點的人。                    
+                </div>
+            </div>
+        </section>
+        </div>
+        </div>
+        </section>
+        <div class="growthrings" id="gt3">
+        </div>
+    </main>
+    
+        <footer>
+            <div>
+                @光影之語插畫聯展.張婷創作.2025
+            </footer>
+            </div>
+           
+
+    <!-- 先載入jquery原始碼，讓瀏覽器看懂，以下方法二擇一（不可重複使用） -->
+    <!-- 方法一：抓別人套件裡面給的，位置在設定按鈕 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>-->
+    <!-- 方法二：jquery官方CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- 換圖輪播JS,因為是寫jquery，所以先執行jquery原始檔，要放在他下面 -->
+    <script src="./js/carouse.js"></script>
+    <!-- JQ smoove 官方CDN -->
+    <!--  要先讓電腦讀ＪＱ 才可以懂ＪＱ smoove，要放在ＪＱ的後面-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- 自訂的ＪＳ一定一定要寫在最下面，目的是為了最後執行 -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
