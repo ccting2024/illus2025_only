@@ -10,6 +10,7 @@
     box-sizing: border-box;
     /*不累加內距padding與邊匡border*/
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,6 +50,7 @@ h2 {
 section {
     padding-top: 20px;
 }
+
 /* 重置列表 */
 ul,
 ol {
@@ -89,21 +91,25 @@ header {
     opacity: 0.3;
     transition: .35s;
 }
+
 @media (min-width:768px) {
     .navbar {
         display: flex;
     }
+
     .menu {
-       display: flex;
+        display: flex;
     }
+
     /* 為什麼不行？？ */
     .menu li a {
-padding: 10px;
-width: 5vw;
+        padding: 10px;
+        width: 5vw;
     }
 
 
 }
+
 .menu li {
     display: flex;
     justify-content: center;
@@ -209,25 +215,29 @@ width: 5vw;
     top: 800px;
     z-index: -1;
 }
-@media (min-width:768px){
-.growthrings {
-    opacity: .5;}
+
+@media (min-width:768px) {
+    .growthrings {
+        opacity: .5;
+    }
 }
+
 #gt2 {
     width: 215vw;
     height: 65vh;
-    left: -500px;
-    top: 1920px;
+    left: -510px;
+    top: 2920px;
     transform: rotate(180deg) scaleX(-1);
 }
 
 #gt3 {
     width: 105vw;
     height: 30vh;
-    left: 45px;
-    top: 8710px;
+    left: 40px;
+    top: 12300px;
     transform: rotate(90deg) scaleX(-1);
 }
+
 /* 前言區 */
 #shysay {
     margin: 600px 0 700px 120px;
@@ -252,36 +262,48 @@ width: 5vw;
     letter-spacing: .04em;
     margin-bottom: 10px;
 }
+
 /* 作品區 */
 
 #pictures .ps {
-  color: #654e4e;
-  font-size: 20px;
-  letter-spacing: .04em;
-  margin-top: 10px;
-  margin-bottom: 40px;
+    color: #654e4e;
+    font-size: 20px;
+    letter-spacing: .04em;
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
+#pictures .psps {
+    font-size: 16px;
+    margin-bottom: 40px;
+    letter-spacing: .04em;
+    color: #654e4e;
+}
 
 .textbox {
-display:inline-flex;
-margin: 42px 0 22px 0;
+    display: inline-flex;
+    margin: 42px 0 22px 0;
 }
+
 .textbox h3 {
     letter-spacing: .3em;
     font-size: 20px;
     font-weight: 600;
 }
+
 .text {
     margin-left: 15px;
 }
+
 .textbox h4 {
     letter-spacing: .2em;
     font-size: 24px;
     font-weight: 500;
-    margin-bottom:8px ;
+    margin-bottom: 8px;
 }
-.textbox h5,.textbox h6 {
+
+.textbox h5,
+.textbox h6 {
     display: inline-block;
     letter-spacing: .11em;
     font-size: 20px;
@@ -289,6 +311,7 @@ margin: 42px 0 22px 0;
     margin-right: 5px;
     margin-bottom: 8px;
 }
+
 .textbox h6 {
     display: block;
 }
@@ -296,19 +319,23 @@ margin: 42px 0 22px 0;
 .picturebox {
     width: 80vw;
 }
+
 .content-slider {
     width: 80vw;
     height: 900px;
 }
+
 .banner {
-    width:80vw ;
+    width: 80vw;
     height: 100px;
 }
+
 .picture {
-    width:80vw ;
+    width: 80vw;
     height: auto;
     margin-bottom: 40px;
 }
+
 .say {
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -319,84 +346,95 @@ margin: 42px 0 22px 0;
 }
 
 /* 橫式 */
-#banner .content-slider .slider ,
+#banner .content-slider .slider,
 #fbanner .content-slider .slider,
-#sibanner .content-slider .slider{
+#sibanner .content-slider .slider {
     height: 300px;
     margin-bottom: 20px;
 }
 
 
-#sbanner .content-slider .slider ,
-#tbanner .content-slider .slider ,
+#sbanner .content-slider .slider,
+#tbanner .content-slider .slider,
 #fibanner .content-slider .slider,
 #sebanner .content-slider .slider,
 #ebanner .content-slider .slider {
     height: 460px;
     margin-bottom: 20px;
 }
+
 @media (min-width:768px) {
-    #banner .content-slider .slider ,
-#fbanner .content-slider .slider,
-#sibanner .content-slider .slider{
-    height: 500px;
-    margin-bottom: 20px;
-}
-#sbanner .content-slider .slider ,
-#tbanner .content-slider .slider ,
-#fibanner .content-slider .slider,
-#sebanner .content-slider .slider,
-#ebanner .content-slider .slider {
-    height: 600px;
-    margin-bottom: 20px;
-}
+
+    #banner .content-slider .slider,
+    #fbanner .content-slider .slider,
+    #sibanner .content-slider .slider {
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    #sbanner .content-slider .slider,
+    #tbanner .content-slider .slider,
+    #fibanner .content-slider .slider,
+    #sebanner .content-slider .slider,
+    #ebanner .content-slider .slider {
+        height: 600px;
+        margin-bottom: 20px;
+    }
 }
 
 /* 關於畫者 */
 #about {
-margin-bottom: 50px;
-margin-top: 400px;
+    margin-bottom: 50px;
+    margin-top: 400px;
 }
+
 #about h2 {
     margin-bottom: 40px;
 }
+
 #about .thing {
-    
+
     background-size: cover;
 }
 
 #about .thingbox {
     display: inline;
-    
+
 }
-#about .thingbox div{
+
+#about .thingbox div {
     width: 40vw;
     margin-bottom: 30px;
 }
+
 #about h3 {
     font-size: 1.4em;
     letter-spacing: .13em;
     font-weight: 300;
 }
-#about h5{
+
+#about h5 {
     font-size: 1.2em;
     font-weight: 300;
     letter-spacing: .1em;
     color: #654e4e;
     margin: 15px 0 5px 0;
-    
+
 }
+
 #about a {
     font-size: .9em;
     font-weight: 300;
     letter-spacing: .1em;
     color: #141414;
     margin: 5px 0 5px 0;
-    
+
 }
+
 .slider {
     transition: transform 0.5s ease;
 }
+
 footer {
     margin: 15px;
     display: flex;
@@ -404,5 +442,5 @@ footer {
     font-size: .8em;
     font-weight: 300;
     letter-spacing: .1em;
-    opacity:.5;
+    opacity: .5;
 }
